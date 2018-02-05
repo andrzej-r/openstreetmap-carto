@@ -710,14 +710,13 @@
 }
 
 #landuse-overlay {
-  [landuse = 'military'][zoom >= 7][way_pixels > 900],
-  [landuse = 'military'][zoom >= 8][way_pixels > 100],
-  [landuse = 'military'][zoom >= 10][way_pixels > 75] {
+  [landuse = 'military'][zoom >= 9][way_pixels > 900] {
     polygon-pattern-file: url('symbols/military_red_hatch.png');
     polygon-pattern-alignment: global;
-    line-color: @military;
-    line-width: 3;
-    line-opacity: 0.329;
+    line-color: @military; 
+    line-width: 2; 
+    line-offset: -1.0;
+    line-opacity: 0.24;
   }
 }
 
